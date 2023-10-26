@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main # Trigger this workflow on push to main branch
+  workflow_dispatch:
 
 jobs:
   publish:
@@ -17,5 +18,6 @@ jobs:
         run: |
           $apiKey = "${{ secrets.PS_GALLERY_API_KEY }}"
           Import-Module PowerShellGet
-          Publish-Module -Path . -NuGetApiKey $apiKey
+          ls ../ -la
+          Publish-Module -Path ../minizinc -NuGetApiKey $apiKey
         shell: pwsh
