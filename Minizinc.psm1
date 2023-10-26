@@ -220,5 +220,9 @@ function convertMinizincOutput {
     param (
         $InputObject
     )
-    ((($InputObject) -replace "==========","") -join "`n" -split "----------") | ConvertFrom-Json -Depth 10
+    $removedLastSolutionIndicator = $InputObject -replace "==========",""
+    $joined = ($removedLastSolutionIndicator -join "`n").Trim()
+    $processedOutput = $joined -split "----------" | Where-Object {! [string]::IsNullOrEmpty($_)}
+    $ret = $processedOutput | ConvertFrom-Json -Depth 10
+    return $ret
 }
