@@ -1,0 +1,21 @@
+name: Publish PowerShell Module
+
+on:
+  push:
+    branches:
+      - main # Trigger this workflow on push to main branch
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Publish Module to PowerShell Gallery
+        run: |
+          $apiKey = "${{ secrets.PS_GALLERY_API_KEY }}"
+          Import-Module PowerShellGet
+          Publish-Module -Path . -NuGetApiKey $apiKey
+        shell: pwsh
