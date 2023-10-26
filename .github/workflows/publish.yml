@@ -18,6 +18,5 @@ jobs:
         run: |
           $apiKey = "${{ secrets.PS_GALLERY_API_KEY }}"
           Import-Module PowerShellGet
-          ls ../ -la
           Publish-Module -Path ../minizinc -NuGetApiKey $apiKey
         shell: pwsh
