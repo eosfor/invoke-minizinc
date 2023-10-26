@@ -1,0 +1,51 @@
+{
+  "$schema": "https://aka.ms/PowerShell/Crescendo/Schemas/2022-06",
+  "commands": [
+    {
+      "Verb": "Invoke",
+      "Noun": "Minizinc",
+      "OriginalName": "/Applications/MiniZincIDE.app/Contents/Resources/minizinc",
+      "Platform": [
+        "MacOS"
+      ],
+      "OutputHandlers": [
+        {
+          "ParameterSetName": "default",
+          "HandlerType": "Function",
+          "Handler": "convertMinizincOutput"
+        }
+      ],
+      "SupportsShouldProcess": false,
+      "SupportsTransactions": false,
+      "NoInvocation": false,
+      "Parameters": [
+        {
+          "Name": "Solver",
+          "OriginalName": "--solver",
+          "Position": 0,
+          "DefaultValue": "gecode",
+          "ParameterType": "string"
+        },
+        {
+          "Name": "Data",
+          "OriginalName": "-D",
+          "Position": 1,
+          "ParameterType": "string[]"
+        },
+        {
+          "Name": "ModelPath",
+          "OriginalName": "",
+          "Position": 2,
+          "ParameterType": "string"
+        },
+        {
+          "Name": "DataPath",
+          "OriginalName":"",
+          "Position": 3,
+          "ParameterType": "string[]"
+        }
+      ],
+      "Examples": []
+    }
+  ]
+}

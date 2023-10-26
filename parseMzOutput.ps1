@@ -1,0 +1,6 @@
+function convertMinizincOutput {
+    param (
+        $InputObject
+    )
+    
+}
