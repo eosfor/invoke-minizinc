@@ -30,7 +30,7 @@ CompanyName = 'NA'
 Copyright = '(c) Eosfor. All rights reserved.'
 
 # Description of the functionality provided by this module
-# Description = ''
+Description = 'A Crescendo Module wrapping a few minizinc parameters'
 
 # Minimum version of the PowerShell engine required by this module
 PowerShellVersion = '5.1.0'
