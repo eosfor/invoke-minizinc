@@ -12,7 +12,7 @@
 RootModule = 'Minizinc.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.0.2'
+ModuleVersion = '0.0.3'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -21,13 +21,13 @@ ModuleVersion = '0.0.2'
 GUID = '827aaeec-bc92-4ac0-b64b-985ad98d1801'
 
 # Author of this module
-Author = 'andre'
+Author = 'eosfor'
 
 # Company or vendor of this module
-CompanyName = 'Unknown'
+CompanyName = 'NA'
 
 # Copyright statement for this module
-Copyright = '(c) andre. All rights reserved.'
+Copyright = '(c) eosfor. All rights reserved.'
 
 # Description of the functionality provided by this module
 Description = 'Powershell Crescendo limited wrapper for minizinc'
@@ -69,7 +69,7 @@ PowerShellVersion = '5.1.0'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Invoke-Minizinc'
+FunctionsToExport = 'Invoke-Minizinc', 'Invoke-Minizinc', 'Invoke-Minizinc'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()
@@ -121,11 +121,11 @@ PrivateData = @{
     } # End of PSData hashtable
 
 
+    # CrescendoGenerated
+    CrescendoGenerated = '10/27/2023 22:46:05'
+
     # CrescendoVersion
     CrescendoVersion = '1.1.0'
-
-    # CrescendoGenerated
-    CrescendoGenerated = '10/27/2023 21:06:22'
 
 } # End of PrivateData hashtable
 
