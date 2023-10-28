@@ -46,6 +46,53 @@
         }
       ],
       "Examples": []
+    },
+    {
+      "Verb": "Invoke",
+      "Noun": "Minizinc",
+      "OriginalName": "C:\\Program Files\\MiniZinc\\minizinc.exe",
+      "Platform": [
+        "Windows"
+      ],
+      "OutputHandlers": [
+        {
+          "ParameterSetName": "default",
+          "HandlerType": "Function",
+          "Handler": "convertMinizincOutput"
+        }
+      ],
+      "SupportsShouldProcess": false,
+      "SupportsTransactions": false,
+      "NoInvocation": false,
+      "Parameters": [
+        {
+          "Name": "Solver",
+          "OriginalName": "--solver",
+          "Position": 0,
+          "DefaultValue": "gecode",
+          "ParameterType": "string"
+        },
+        {
+          "Name": "Data",
+          "OriginalName": "-D",
+          "Position": 1,
+          "ParameterType": "string[]"
+        },
+        {
+          "Name": "ModelPath",
+          "OriginalName": "",
+          "Position": 2,
+          "ParameterType": "string"
+        },
+        {
+          "Name": "DataPath",
+          "OriginalName":"",
+          "Position": 3,
+          "ParameterType": "string[]"
+        }
+      ],
+      "Examples": []
     }
   ]
+  
 }
