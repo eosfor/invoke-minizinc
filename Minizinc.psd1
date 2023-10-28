@@ -30,7 +30,7 @@ CompanyName = 'Unknown'
 Copyright = '(c) andre. All rights reserved.'
 
 # Description of the functionality provided by this module
-# Description = ''
+Description = 'Powershell Crescendo limited wrapper for minizinc'
 
 # Minimum version of the PowerShell engine required by this module
 PowerShellVersion = '5.1.0'
@@ -69,7 +69,7 @@ PowerShellVersion = '5.1.0'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Invoke-Minizinc', 'Invoke-Minizinc'
+FunctionsToExport = 'Invoke-Minizinc'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()
